@@ -172,6 +172,7 @@ Builder.load_string("""
                 text: "Volume: "
             TextInput:
                 id: input_numberofvol
+                input_filter: 'int'
                 font_size: 32
         BoxLayout:
             orientation: "horizontal"
@@ -270,6 +271,7 @@ Builder.load_string("""
                 text: "Volume"
             TextInput:
                 id: input_del_volume
+                input_filter: 'int'
                 font_size: 32
         BoxLayout:
             orientation: 'horizontal'
@@ -277,7 +279,7 @@ Builder.load_string("""
             spacing: 10
             Button:
                 text: "Deletar o item"
-                on_press: root.del_one()
+                on_press: root.DeleteEntry()
             Button:
                 text: "Voltar"
                 on_press:
@@ -310,6 +312,7 @@ Builder.load_string("""
                 text: "Volume*"
             TextInput:
                 id: input_updt_vol
+                input_filter: 'int'
                 font_size: 32
         BoxLayout:
             orientation: "horizontal"
