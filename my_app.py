@@ -6,7 +6,6 @@ import database_functions as dbf
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
-from kivy.uix.scrollview import ScrollView
 from kivy.core.window import Window
 from kivy.properties import ObjectProperty, StringProperty
 from kivy.uix.popup import Popup
